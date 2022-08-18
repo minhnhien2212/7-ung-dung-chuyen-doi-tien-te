@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Toán Chuyển Đổi Tiền Tệ</title>
+  <style>
+    div {
+      display: inline-block; margin-left: 20px; margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div>
+      <label>Amount:</label>
+      <input name="amount" id="amount" placeholder="Enter amount">
+    </div>
+
+    <div>
+      <label>From Currency</label>
+      <select id="fromCurrency">
+        <option>VND</option>
+        <option>USD</option>
+      </select>
+    </div>
+
+    <div>
+      <label>To Currency</label>
+      <select id="toCurrency">
+        <option>VND</option>
+        <option>USD</option>
+      </select>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="button" onclick="convertCurrency()">Convert</button>
+    <p id="result"></p>
+  </form>
+
+  <script src="ex-bai-toan-04.js"></script>
+</body>
+</html>
